@@ -1,0 +1,1 @@
+AWS Getway URL: 'https://dute42ik62.execute-api.us-east-2.amazonaws.com/test'

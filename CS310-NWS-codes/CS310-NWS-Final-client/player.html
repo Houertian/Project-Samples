@@ -1,0 +1,66 @@
+<html>
+<header>
+   <title>Music Player</title>
+   <link rel="stylesheet" type="text/css" href="ipod.css"/>
+   <link rel="stylesheet" type="text/css" href="styles.css"/>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</header>
+<body onload="init()">
+  <!-- <div class = navigatorBar><ul>
+     <li id="Homebutton"><a href="index.html">Home</a></li>
+     <li id="Resumebutton"><a href="CV.pdf">Resume</a></li>
+     <li id="Biobutton"><a href="bio.html" >Bio</a></li>
+     <li id="Contactbutton"><a href="contact.html" >Contact</a></li>
+     <li id="Searchbutton"><a href="#Project" >Projects</a>
+        <div class="spanlist">
+          <a href="albums.html" ><span>Web player</span></a>
+          <a href="https://www.instagram.com/movement_tian/" ><span>Photography</span></a>
+        </div>
+     </li>
+  </ul></div> -->
+   <div id="screen">
+     <div class="head-bar">
+       <a href="songs.html">
+         <div class="back-button"><i class="material-icons">arrow_back</i></div></a>
+   </div>
+   <div class="player-album-art">
+     <img id="albumsimage" src="images/currents.jpg" alt="Currents Album Cover"/>
+   </div>
+   <div class="player-song-info">
+      <p id="player-song-name">Loading</p>
+      <p id="player-song-album"><em>Loading</em></p><p id="player-song-artist"> - Loading</p>
+   </div>
+   <div class="player-timebox">
+     <input type="range" id="player-time" min="0" max="180" value="0">
+     <div id="time-elapsed">0:00</div>
+     <div id="time-total">3:00</div>
+   </div>
+   <div class="player-controls">
+      <button id="prevSong()"><i class="material-icons">skip_previous</i></button>
+      <button id="switchPlay()""><i id="playPause" class="material-icons">play_arrow</i></button>
+      <button id="nextSong()"><i class="material-icons">skip_next</i></button>
+   </div>
+   <!-- <div class="volume-bar">
+     <div class="volume-level">
+        <i class="material-icons">volume_down</i>
+        <div id="vl0"></div>
+        <div id="vl1"></div>
+        <div id="vl2"></div>
+        <div id="vl3"></div>
+        <div id="vl4"></div>
+        <div id="vl5"></div>
+     </div>
+   </div>
+   <div class="volume-rocker">
+     <button id = "volup" >&mdash;</button>
+     <button id = "voldn" >+</button>
+   </div> -->
+
+</div>
+<script src="ipod.js"></script>
+</body>
+</html>
+<!--
+* bg iphone img is 363x762px
+* iphone 'screen' is apprx 300x530 -->

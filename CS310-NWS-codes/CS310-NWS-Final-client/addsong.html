@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Album Select</title>
+    <link rel="stylesheet" type="text/css" href="ipod.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="login.css" /> -->
+</head>
+<body>
+    <div id="screen">
+        <div class="ipod-frame">
+            <div class="head-bar">
+                <a href="albums.html">
+                    <div class="back-button">
+                        <img src="images/arrow_back.svg">
+                    </div>
+                </a>
+            </div>
+            <div class="logincontainer">
+                <h2>Add a song to: </h2>
+                <h2 id="playlistnamehere"></h2>
+                <form id="loginForm">
+                    <input type="text" id="songNameIn" placeholder="This Song's name" required>
+                    <input type="text" id="songAlbumIn" placeholder="Album Name" required>
+                    <input type="text" id="songArtistIn" placeholder="Artist Name" required>
+                    <label for="fileInput">Upload Music .mp3:</label>
+                    <input type="file" accept="audio/mpeg" id="musicInput" placeholder="Artist Name">
+                    <label for="coverInput">Upload Album Cover:</label>
+                    <input type="file" accept=".jpg" id="coverInput" placeholder="Artist Name">
+                    <a><br/>Ready to add to playlist? </a>
+                    <button type="button" id="AddSongToListBtn">Do it!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include the JavaScript file -->
+    <script src="ipod.js"></script>
+</body>
+</html>

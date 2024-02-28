@@ -1,0 +1,51 @@
+<!-- <!DOCTYPE html> -->
+<html>
+<head>
+    <title>Song Select</title>
+    <link rel="stylesheet" type="text/css" href="ipod.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+    <div id="screen">
+        <div class="head-bar">
+            <a href="albums.html">
+                <div class="back-button">
+                    <img src="images/arrow_back.svg">
+                </div>
+            </a>
+            <div class="delete-list-button">
+                <button id="deleteListButton">Delete List</button>
+            </div>
+        </div>
+        <div class="songs-info-wrapper">
+            <div class="songs-album-art">
+                <img src="images/currents.jpg">
+            </div>
+            <div class="songs-text-info">
+                <div id = "playlistname" class="songs-album-name">
+                    <p>Loading</p>
+                </div>
+                <div class="songs-album-year">
+                    <p><br/></p>
+                </div>
+                <div id="accesstype" class="songs-artist-name">
+                    <p>Loading</p>
+                </div>
+                
+                <div id="DeleteSongHere" class="logout-button">Delete Song</div>
+            </div>
+        </div>
+        <div class="songs-list">
+            <ol id="songsList">
+                <!-- Songs will be generated dynamically here -->
+            </ol>
+        </div>
+        
+        <div class="bottom-buttons">
+            <div id="AddAccessToList" class="logout-button">Add Users</div>
+            <div id="AddSongToList" class="logout-button">Add Songs</div>
+        </div>
+    </div>
+    <script src="ipod.js"></script>
+</body>
+</html>

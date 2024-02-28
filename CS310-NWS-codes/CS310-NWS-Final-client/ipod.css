@@ -1,0 +1,436 @@
+/*
+	Global classes
+					*/
+body {
+	background-image: url("images/iphoneOL.jpg");
+	background-repeat: no-repeat;
+	/* font-family: Avenir, sans-serif; */
+	font-family: sans-serif;
+	font-size: 100%;
+}
+
+
+#screen {
+	height: 530px;
+	width: 300px;
+	margin: 105px 23px;
+}
+
+.head-bar {
+	/* display: flex; */
+	background-color: #e6ccff;
+	height: 45px;
+	color: white;
+    align-items: center;
+}
+
+
+.head-bar h1{
+	
+    margin: 0; /* Remove default margin for h1 element */
+    font-size: 24px; /* Adjust font size as needed */
+	text-align: center;
+	text-shadow: 1px 1px #000000;
+}
+
+.logout-button {
+    padding: 5px 10px;
+    width: auto;
+	margin-left: 10px;
+	margin-right: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bottom-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto; /* Push the buttons to the bottom */
+}
+.back-button {
+	height: 30px;
+	width: 50px;
+	background-color: #a2a4aa;
+	border: 1px white solid;
+	position: relative;
+	left: 10px;
+	top: 7px;
+}
+.back-button img{
+	display: block;
+	margin: auto;
+}
+
+img{
+	max-width:100%;
+	height:auto;
+}
+
+#screen p{
+	margin: auto;
+}
+
+/*
+	Albums
+			*/
+.albums-album-wrapper {
+	height: 220px;
+	width: 146px;
+	/* background-color: #e6ccff; */
+	margin: 10 0 0 1;
+	display: inline-block;
+	table-layout: auto;
+	text-align: center;
+}
+
+
+.albums-album-art {
+	height: 130px;
+	width: 130px;
+	/* background-color: #556dda; */
+	margin: 10 8 10 8;
+	display: inline-block;
+}
+
+.albums-album-name {
+	height: 20px;
+	width: 146px;
+	/* background-color: #404353; */
+	display: inline-block;
+	font-weight: bold;
+
+}
+
+.albums-artist-name {
+	height: 20px;
+	width: 146px;
+	/* background-color: #465ddd; */
+	margin-top: 5;
+	display: inline-block;
+	font-size: .75em;
+	font-style: italic;
+
+}
+
+/*
+	Songs
+			*/
+.songs-info-wrapper {
+	height: 150px;
+	width: 300px;
+	/* background-color: #e6ccff; */
+	margin: 10 0 0 1;
+	display: inline-block;
+	table-layout: auto;
+
+}
+
+.songs-album-art {
+	height: 150;
+	width: 150;
+	/* background-color: #556dda; */
+	margin: 0 4 0 8;
+	display: inline-block;
+
+}
+
+.songs-album-name {
+	height: 40px;
+	width: 	110px;
+	/* background-color: #404353; */
+	display: block;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-align: left;
+	/* position: relative;
+	top: -70px;
+	left:140px; */
+}
+
+.songs-artist-name {
+	height: 30px;
+	width: 130px;
+	/* background-color: #465ddd; */
+	margin-top: 5;
+	display: block;
+	font-size: 1.25em;
+	font-style: italic;
+	text-align: left;
+	/* position: relative;
+	top: -70px;
+	left:140px; */
+
+}
+
+.songs-text-info {
+	height: 110px;
+	width: 130px;
+	/* background-color: #556dda; */
+	display: inline-block;
+	position: relative;
+	top: -30px;
+	text-align: left;
+
+}
+
+.songs-album-year {
+	height: 30px;
+	width: 130px;
+	/* background-color: #465ddd; */
+	margin-top: 5px;
+	display: block;
+	text-align: left;
+	font-size: 1.25em;
+
+}
+
+#screen .songs-list {
+	height: 275px;
+	width: 290px;
+	/* background-color: #465ddd; */
+	font-size: 1em;
+}
+
+#screen .songs-list li{
+	border-style: solid;
+	border-color: #a2a4aa;
+	border-width: 1px;
+	margin: 1px;
+	padding: 3px;
+}
+
+#screen .songs-list li:hover{
+	background-color: rgba(255, 192, 203, 0.616);
+}
+.songs-list a{
+	text-decoration: none;
+	color: black;
+}
+#screen .songs-list a:hover{
+	text-decoration: underline;
+	/* color: blue; */
+}
+
+#thissong{
+	text-decoration: underline;
+	color: blue;
+
+}
+
+.delete-list-button {
+    position: relative;
+    left: 210px;
+    top: -20px; /* Adjust as needed based on the position of the back-button */
+    height: 30px;
+    display: inline-block; /* This will allow it to sit next to the back-button */
+}
+
+.delete-list-button button {
+    background-color: #ff4d4d; /* Example red color, modify as you like */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+
+/*
+	Player
+			*/
+
+.head-bar .material-icons{
+	margin-left: 12px;
+	margin-top: 2px;
+	color: purple;
+
+}
+
+.player-album-art{
+	height: 240px;
+	width: 240px;
+	margin: 30 30 10 30;
+
+}
+
+.player-song-info {
+	color: violet;
+	font-size: 1.1em;
+	text-align: center;
+}
+
+#player-song-name {
+	color: black;
+	font-size: 1.2em;
+}
+
+.volume-bar i{
+	display: inline;
+}
+
+.volume-level {
+  width: 80%;
+  height: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center -5px;
+	margin-top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.volume-level div{
+  height: 6px;
+  width: 24px;
+	border: 1px solid black;
+	margin-left: 3px;
+	margin-right: 3px;
+
+}
+
+.volume-rocker {
+	display: block;
+	margin-top: 10px;
+	  width:100%;
+	  height: 20px;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
+}
+
+.volume-rocker button{
+	margin-left: 30px;
+	margin-right: 30px;
+  height: 15px;
+  width: 80px;
+	font-size: 0.6em;
+	font-weight: bold;
+	border-radius: 3px;
+  background-color: white;
+	border-width: 1px;
+	border-color: : grey;
+}
+
+.volume-rocker button:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+.player-controls{
+  width: 40%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.player-controls button{
+	margin-left: 5px;
+	margin-right: 5px;
+  height: auto;
+  width: auto;
+}
+
+
+
+.songs-info-wrapper {
+	height: 150px;
+	width: 300px;
+	/* background-color: #e6ccff; */
+	margin: 10 0 0 1;
+	display: inline-block;
+	table-layout: auto;
+
+}
+
+.player-timebox{
+	display: block;
+	height: 50px;
+	width: : 90%;
+	/* background-color: #999; */
+}
+
+#player-time {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+	width: 80%
+
+}
+
+#player-time::-moz-range-thumb{
+  cursor: pointer; /* Cursor on hover */
+
+}
+
+#time-elapsed {
+	display: inline-block;
+	margin-left: 20px;
+  float: left;
+	/* background-color: #999; */
+  overflow: auto;
+
+}
+
+#time-total{
+	display: inline-block;
+	margin-right: 20px;
+  float: right;
+	/* background-color: #999; */
+  overflow: auto;
+}
+
+.logincontainer {
+    /* text-align: center; */
+    width: 200px;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+h2 {
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#loginBtn {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 150px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#loginBtn:hover {
+    background-color: #0056b3;
+}
+
+#invalidPassword {
+    color: red;
+    /* display: none; */
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
